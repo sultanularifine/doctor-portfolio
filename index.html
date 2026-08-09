@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="bn" data-theme="light">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="ডা. অমিত হাসান — শিশু, কিশোর, নবজাতক বিশেষজ্ঞ ও সার্জন। আধুনিক, রোগী-কেন্দ্রিক চিকিৎসা ও পরামর্শ।">
+  <meta name="description"
+    content="ডা. অমিত হাসান — শিশু, কিশোর, নবজাতক বিশেষজ্ঞ ও সার্জন। আধুনিক, রোগী-কেন্দ্রিক চিকিৎসা ও পরামর্শ।">
   <meta name="theme-color" content="#075b8f">
   <title>ডা. অমিত হাসান | Pediatric & Neonatal Surgeon</title>
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Noto+Serif+Bengali:wght@500;600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Noto+Serif+Bengali:wght@500;600;700&display=swap"
+    rel="stylesheet">
 
   <!-- Bootstrap + Icons + AOS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -19,284 +23,701 @@
 
   <style>
     :root {
-      --primary:#075b8f;
-      --primary-2:#0b79b7;
-      --navy:#073b5c;
-      --accent:#19a7ce;
-      --green:#0b7655;
-      --orange:#f7941d;
-      --text:#173042;
-      --muted:#667b8a;
-      --bg:#f6fbff;
-      --surface:#ffffff;
-      --surface-2:#eef7fc;
-      --border:rgba(7,91,143,.12);
-      --shadow:0 18px 55px rgba(7,59,92,.11);
-      --radius:22px;
+      --primary: #075b8f;
+      --primary-2: #0b79b7;
+      --navy: #073b5c;
+      --accent: #19a7ce;
+      --green: #0b7655;
+      --orange: #f7941d;
+      --text: #173042;
+      --muted: #667b8a;
+      --bg: #f6fbff;
+      --surface: #ffffff;
+      --surface-2: #eef7fc;
+      --border: rgba(7, 91, 143, .12);
+      --shadow: 0 18px 55px rgba(7, 59, 92, .11);
+      --radius: 22px;
     }
 
     [data-theme="dark"] {
-      --text:#e8f4fb;
-      --muted:#a8bdc9;
-      --bg:#081923;
-      --surface:#0d2533;
-      --surface-2:#102f40;
-      --border:rgba(255,255,255,.10);
-      --shadow:0 18px 55px rgba(0,0,0,.30);
+      --text: #e8f4fb;
+      --muted: #a8bdc9;
+      --bg: #081923;
+      --surface: #0d2533;
+      --surface-2: #102f40;
+      --border: rgba(255, 255, 255, .10);
+      --shadow: 0 18px 55px rgba(0, 0, 0, .30);
     }
 
-    * { box-sizing:border-box; }
-    html { scroll-behavior:smooth; scroll-padding-top:85px; }
-    body {
-      margin:0;
-      font-family:"Hind Siliguri",sans-serif;
-      color:var(--text);
-      background:var(--bg);
-      overflow-x:hidden;
+    * {
+      box-sizing: border-box;
     }
-    h1,h2,h3,h4,h5 { font-family:"Noto Serif Bengali",serif; }
-    a { text-decoration:none; }
-    img { max-width:100%; }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 85px;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Hind Siliguri", sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      overflow-x: hidden;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      font-family: "Noto Serif Bengali", serif;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+    }
 
     .topbar {
-      background:var(--navy);
-      color:#fff;
-      font-size:.92rem;
+      background: var(--navy);
+      color: #fff;
+      font-size: .92rem;
     }
-    .topbar a { color:#fff; opacity:.92; }
+
+    .topbar a {
+      color: #fff;
+      opacity: .92;
+    }
+
     .navbar {
-      background:color-mix(in srgb, var(--surface) 92%, transparent);
-      backdrop-filter:blur(14px);
-      border-bottom:1px solid var(--border);
-      transition:.3s;
+      background: color-mix(in srgb, var(--surface) 92%, transparent);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border);
+      transition: .3s;
     }
-    .navbar.scrolled { box-shadow:0 8px 30px rgba(7,59,92,.08); }
+
+    .navbar.scrolled {
+      box-shadow: 0 8px 30px rgba(7, 59, 92, .08);
+    }
+
     .brand-mark {
-      width:44px;height:44px;border-radius:14px;
-      display:grid;place-items:center;
-      background:linear-gradient(135deg,var(--primary),var(--accent));
-      color:#fff;font-size:1.35rem;
+      width: 44px;
+      height: 44px;
+      border-radius: 14px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      color: #fff;
+      font-size: 1.35rem;
       align-content: end;
-      box-shadow:0 8px 22px rgba(7,91,143,.25);
+      box-shadow: 0 8px 22px rgba(7, 91, 143, .25);
     }
-    .brand-title { line-height:1.05; }
-    .brand-title strong { display:block; color:var(--primary); font-size:1.05rem; }
-    .brand-title small { color:var(--muted); }
+
+    .brand-title {
+      line-height: 1.05;
+    }
+
+    .brand-title strong {
+      display: block;
+      color: var(--primary);
+      font-size: 1.05rem;
+    }
+
+    .brand-title small {
+      color: var(--muted);
+    }
 
     .nav-link {
-      color:var(--text)!important;
-      font-weight:600;
-      margin:0 2px;
-      border-radius:10px;
+      color: var(--text) !important;
+      font-weight: 600;
+      margin: 0 2px;
+      border-radius: 10px;
     }
-    .nav-link:hover,.nav-link.active { color:var(--primary)!important;background:var(--surface-2); }
+
+    .nav-link:hover,
+    .nav-link.active {
+      color: var(--primary) !important;
+      background: var(--surface-2);
+    }
 
     .icon-btn {
-      width:42px;height:42px;border:1px solid var(--border);
-      background:var(--surface);color:var(--text);
-      border-radius:50%;display:grid;place-items:center;
+      width: 42px;
+      height: 42px;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--text);
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
     }
 
     .btn-primary-custom {
-      border:0;color:#fff;
-      background:linear-gradient(135deg,var(--primary),var(--primary-2));
-      box-shadow:0 12px 28px rgba(7,91,143,.22);
-      border-radius:12px;padding:.78rem 1.1rem;font-weight:700;
+      border: 0;
+      color: #fff;
+      background: linear-gradient(135deg, var(--primary), var(--primary-2));
+      box-shadow: 0 12px 28px rgba(7, 91, 143, .22);
+      border-radius: 12px;
+      padding: .78rem 1.1rem;
+      font-weight: 700;
     }
-    .btn-primary-custom:hover { transform:translateY(-2px);color:#fff; }
+
+    .btn-primary-custom:hover {
+      transform: translateY(-2px);
+      color: #fff;
+    }
+
     .btn-outline-custom {
-      border:1px solid var(--primary);color:var(--primary);
-      border-radius:12px;padding:.72rem 1.05rem;font-weight:700;
+      border: 1px solid var(--primary);
+      color: var(--primary);
+      border-radius: 12px;
+      padding: .72rem 1.05rem;
+      font-weight: 700;
     }
-    .btn-outline-custom:hover { background:var(--primary);color:#fff; }
+
+    .btn-outline-custom:hover {
+      background: var(--primary);
+      color: #fff;
+    }
 
     .hero {
-      position:relative;min-height:calc(100vh - 115px);
-      display:flex;align-items:center;overflow:hidden;
+      position: relative;
+      min-height: calc(100vh - 115px);
+      display: flex;
+      align-items: center;
+      overflow: hidden;
       background:
-        radial-gradient(circle at 10% 15%, rgba(25,167,206,.13), transparent 30%),
-        radial-gradient(circle at 90% 80%, rgba(7,91,143,.12), transparent 32%),
+        radial-gradient(circle at 10% 15%, rgba(25, 167, 206, .13), transparent 30%),
+        radial-gradient(circle at 90% 80%, rgba(7, 91, 143, .12), transparent 32%),
         var(--bg);
     }
-    .hero:before,.hero:after {
-      content:"";position:absolute;border-radius:50%;filter:blur(2px);pointer-events:none;
-    }
-    .hero:before {
-      width:420px;height:420px;right:-170px;top:-120px;
-      background:rgba(25,167,206,.10);
-    }
+
+    .hero:before,
     .hero:after {
-      width:300px;height:300px;left:-160px;bottom:-120px;
-      background:rgba(7,91,143,.08);
+      content: "";
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(2px);
+      pointer-events: none;
     }
+
+    .hero:before {
+      width: 420px;
+      height: 420px;
+      right: -170px;
+      top: -120px;
+      background: rgba(25, 167, 206, .10);
+    }
+
+    .hero:after {
+      width: 300px;
+      height: 300px;
+      left: -160px;
+      bottom: -120px;
+      background: rgba(7, 91, 143, .08);
+    }
+
     .eyebrow {
-      display:inline-flex;gap:8px;align-items:center;
-      color:var(--primary);font-weight:700;
-      background:var(--surface);border:1px solid var(--border);
-      padding:.45rem .75rem;border-radius:999px;
-      box-shadow:0 8px 22px rgba(7,59,92,.06);
+      display: inline-flex;
+      gap: 8px;
+      align-items: center;
+      color: var(--primary);
+      font-weight: 700;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      padding: .45rem .75rem;
+      border-radius: 999px;
+      box-shadow: 0 8px 22px rgba(7, 59, 92, .06);
     }
+
     .hero h1 {
-      font-size:clamp(2.5rem,4vw,5.3rem);
-      line-height:1.1;margin:1.15rem 0;
-      color:var(--navy);
+      font-size: clamp(2.5rem, 4vw, 5.3rem);
+      line-height: 1.1;
+      margin: 1.15rem 0;
+      color: var(--navy);
     }
-    [data-theme="dark"] .hero h1 { color:#eaf8ff; }
-    .hero h1 span { color:var(--primary-2); }
-    .hero-lead { font-size:1.15rem;line-height:1.9;color:var(--muted);max-width:680px; }
+
+    [data-theme="dark"] .hero h1 {
+      color: #eaf8ff;
+    }
+
+    .hero h1 span {
+      color: var(--primary-2);
+    }
+
+    .hero-lead {
+      font-size: 1.15rem;
+      line-height: 1.9;
+      color: var(--muted);
+      max-width: 680px;
+    }
+
     .hero-card {
-      position:relative;padding:16px;border-radius:32px;
-      background:linear-gradient(145deg,rgba(255,255,255,.85),rgba(229,246,255,.75));
-      box-shadow:var(--shadow);border:1px solid rgba(255,255,255,.8);
+      position: relative;
+      padding: 16px;
+      border-radius: 32px;
+      background: linear-gradient(145deg, rgba(255, 255, 255, .85), rgba(229, 246, 255, .75));
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(255, 255, 255, .8);
     }
-    [data-theme="dark"] .hero-card { background:linear-gradient(145deg,#123344,#0c2431); }
+
+    [data-theme="dark"] .hero-card {
+      background: linear-gradient(145deg, #123344, #0c2431);
+    }
+
     .doctor-img {
-      width:100%;height:min(68vh,650px);object-fit:cover;
-      object-position:center top;border-radius:24px;
+      width: 100%;
+      height: min(68vh, 650px);
+      object-fit: cover;
+      object-position: center top;
+      border-radius: 24px;
     }
+
     .floating-badge {
-      position:absolute;left:-30px;bottom:45px;
-      background:var(--surface);padding:16px 18px;border-radius:18px;
-      box-shadow:var(--shadow);border:1px solid var(--border);
-      max-width:230px;
+      position: absolute;
+      left: -30px;
+      bottom: 45px;
+      background: var(--surface);
+      padding: 16px 18px;
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border);
+      max-width: 230px;
     }
-    .floating-badge strong { display:block;color:var(--primary);font-size:1.35rem; }
 
-    .stats { margin-top:-45px;position:relative;z-index:4; }
+    .floating-badge strong {
+      display: block;
+      color: var(--primary);
+      font-size: 1.35rem;
+    }
+
+    .stats {
+      margin-top: -45px;
+      position: relative;
+      z-index: 4;
+    }
+
     .stat-card {
-      background:var(--surface);border:1px solid var(--border);
-      border-radius:18px;padding:22px;box-shadow:var(--shadow);
-      height:100%;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 22px;
+      box-shadow: var(--shadow);
+      height: 100%;
     }
-    .stat-card i { color:var(--primary);font-size:1.6rem; }
-    .counter { font-size:2rem;font-weight:800;color:var(--navy); }
-    [data-theme="dark"] .counter { color:#eaf8ff; }
 
-    .section { padding:100px 0; }
-    .section-soft { background:var(--surface-2); }
-    .section-head { max-width:760px;margin:0 auto 48px;text-align:center; }
-    .section-kicker { color:var(--primary);font-weight:800;letter-spacing:.5px; }
-    .section-head h2 { font-size:clamp(2rem,4vw,3.2rem);margin:.45rem 0 1rem; }
-    .section-head p { color:var(--muted);font-size:1.05rem;line-height:1.8; }
-
-    .about-card,.service-card,.condition-card,.timeline-card,.testimonial-card,.contact-card,.faq-card {
-      background:var(--surface);border:1px solid var(--border);
-      border-radius:var(--radius);box-shadow:0 12px 35px rgba(7,59,92,.06);
+    .stat-card i {
+      color: var(--primary);
+      font-size: 1.6rem;
     }
-    .about-card { padding:32px; }
-    .check-list { list-style:none;padding:0;margin:0; }
-    .check-list li { margin:12px 0;color:var(--muted); }
-    .check-list i { color:#0a9a70;margin-right:8px; }
+
+    .counter {
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--navy);
+    }
+
+    [data-theme="dark"] .counter {
+      color: #eaf8ff;
+    }
+
+    .section {
+      padding: 100px 0;
+    }
+
+    .section-soft {
+      background: var(--surface-2);
+    }
+
+    .section-head {
+      max-width: 760px;
+      margin: 0 auto 48px;
+      text-align: center;
+    }
+
+    .section-kicker {
+      color: var(--primary);
+      font-weight: 800;
+      letter-spacing: .5px;
+    }
+
+    .section-head h2 {
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      margin: .45rem 0 1rem;
+    }
+
+    .section-head p {
+      color: var(--muted);
+      font-size: 1.05rem;
+      line-height: 1.8;
+    }
+
+    .about-card,
+    .service-card,
+    .condition-card,
+    .timeline-card,
+    .testimonial-card,
+    .contact-card,
+    .faq-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: 0 12px 35px rgba(7, 59, 92, .06);
+    }
+
+    .about-card {
+      padding: 32px;
+    }
+
+    .check-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .check-list li {
+      margin: 12px 0;
+      color: var(--muted);
+    }
+
+    .check-list i {
+      color: #0a9a70;
+      margin-right: 8px;
+    }
 
     .service-card {
-      padding:28px;height:100%;transition:.35s;
-      position:relative;overflow:hidden;
+      padding: 28px;
+      height: 100%;
+      transition: .35s;
+      position: relative;
+      overflow: hidden;
     }
+
     .service-card:before {
-      content:"";position:absolute;width:100px;height:100px;border-radius:50%;
-      background:rgba(25,167,206,.09);right:-25px;top:-25px;
+      content: "";
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background: rgba(25, 167, 206, .09);
+      right: -25px;
+      top: -25px;
     }
-    .service-card:hover { transform:translateY(-8px);box-shadow:var(--shadow); }
+
+    .service-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow);
+    }
+
     .service-icon {
-      width:58px;height:58px;border-radius:16px;
-      background:var(--surface-2);color:var(--primary);
-      display:grid;place-items:center;font-size:1.55rem;margin-bottom:18px;
+      width: 58px;
+      height: 58px;
+      border-radius: 16px;
+      background: var(--surface-2);
+      color: var(--primary);
+      display: grid;
+      place-items: center;
+      font-size: 1.55rem;
+      margin-bottom: 18px;
     }
-    .service-card p { color:var(--muted);line-height:1.75; }
 
-    .filter-wrap { display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-bottom:28px; }
+    .service-card p {
+      color: var(--muted);
+      line-height: 1.75;
+    }
+
+    .filter-wrap {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 28px;
+    }
+
     .filter-btn {
-      border:1px solid var(--border);background:var(--surface);
-      color:var(--text);padding:.6rem .95rem;border-radius:999px;font-weight:600;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--text);
+      padding: .6rem .95rem;
+      border-radius: 999px;
+      font-weight: 600;
     }
-    .filter-btn.active,.filter-btn:hover { background:var(--primary);color:#fff;border-color:var(--primary); }
-    .condition-card { padding:18px;display:flex;align-items:center;gap:12px;height:100%; }
-    .condition-dot { width:10px;height:10px;border-radius:50%;background:var(--orange);flex:0 0 auto; }
-    .condition-card span { color:var(--text); }
 
-    .timeline { position:relative; }
+    .filter-btn.active,
+    .filter-btn:hover {
+      background: var(--primary);
+      color: #fff;
+      border-color: var(--primary);
+    }
+
+    .condition-card {
+      padding: 18px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      height: 100%;
+    }
+
+    .condition-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--orange);
+      flex: 0 0 auto;
+    }
+
+    .condition-card span {
+      color: var(--text);
+    }
+
+    .timeline {
+      position: relative;
+    }
+
     .timeline:before {
-      content:"";position:absolute;left:20px;top:0;bottom:0;width:2px;background:rgba(7,91,143,.15);
+      content: "";
+      position: absolute;
+      left: 20px;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: rgba(7, 91, 143, .15);
     }
-    .timeline-item { position:relative;padding-left:60px;margin-bottom:28px; }
+
+    .timeline-item {
+      position: relative;
+      padding-left: 60px;
+      margin-bottom: 28px;
+    }
+
     .timeline-dot {
-      position:absolute;left:9px;top:5px;width:24px;height:24px;border-radius:50%;
-      background:var(--surface);border:6px solid var(--primary);
+      position: absolute;
+      left: 9px;
+      top: 5px;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: var(--surface);
+      border: 6px solid var(--primary);
     }
-    .timeline-card { padding:24px; }
-    .timeline-card small { color:var(--primary);font-weight:800; }
+
+    .timeline-card {
+      padding: 24px;
+    }
+
+    .timeline-card small {
+      color: var(--primary);
+      font-weight: 800;
+    }
 
     .appointment {
-      background:linear-gradient(135deg,#064e7d,#0a86bb);
-      color:#fff;border-radius:30px;padding:50px;
-      position:relative;overflow:hidden;
+      background: linear-gradient(135deg, #064e7d, #0a86bb);
+      color: #fff;
+      border-radius: 30px;
+      padding: 50px;
+      position: relative;
+      overflow: hidden;
     }
+
     .appointment:after {
-      content:"";position:absolute;width:280px;height:280px;border-radius:50%;
-      background:rgba(255,255,255,.08);right:-100px;top:-110px;
+      content: "";
+      position: absolute;
+      width: 280px;
+      height: 280px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, .08);
+      right: -100px;
+      top: -110px;
     }
-    .appointment p { color:rgba(255,255,255,.82); }
 
-    .testimonial-card { padding:28px;height:100%; }
-    .stars { color:#f5a623;letter-spacing:2px; }
-    .quote { font-size:1.05rem;line-height:1.85;color:var(--muted); }
+    .appointment p {
+      color: rgba(255, 255, 255, .82);
+    }
 
-    .faq-card { overflow:hidden; }
-    .accordion-item { background:transparent;border:0;border-bottom:1px solid var(--border); }
-    .accordion-button { background:var(--surface);color:var(--text);font-weight:700;box-shadow:none!important; }
-    .accordion-button:not(.collapsed) { color:var(--primary);background:var(--surface-2); }
-    .accordion-body { color:var(--muted);line-height:1.8; }
+    .testimonial-card {
+      padding: 28px;
+      height: 100%;
+    }
 
-    .contact-card { padding:26px;height:100%; }
+    .stars {
+      color: #f5a623;
+      letter-spacing: 2px;
+    }
+
+    .quote {
+      font-size: 1.05rem;
+      line-height: 1.85;
+      color: var(--muted);
+    }
+
+    .faq-card {
+      overflow: hidden;
+    }
+
+    .accordion-item {
+      background: transparent;
+      border: 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .accordion-button {
+      background: var(--surface);
+      color: var(--text);
+      font-weight: 700;
+      box-shadow: none !important;
+    }
+
+    .accordion-button:not(.collapsed) {
+      color: var(--primary);
+      background: var(--surface-2);
+    }
+
+    .accordion-body {
+      color: var(--muted);
+      line-height: 1.8;
+    }
+
+    .contact-card {
+      padding: 26px;
+      height: 100%;
+    }
+
     .contact-icon {
-      width:50px;height:50px;border-radius:14px;background:var(--surface-2);
-      color:var(--primary);display:grid;place-items:center;font-size:1.35rem;
-    }
-    .form-control,.form-select {
-      background:var(--surface);color:var(--text);border:1px solid var(--border);
-      border-radius:12px;padding:.8rem .9rem;
-    }
-    .form-control:focus,.form-select:focus {
-      border-color:var(--primary);box-shadow:0 0 0 .2rem rgba(7,91,143,.10);
+      width: 50px;
+      height: 50px;
+      border-radius: 14px;
+      background: var(--surface-2);
+      color: var(--primary);
+      display: grid;
+      place-items: center;
+      font-size: 1.35rem;
     }
 
-    footer { background:#062c43;color:#d7e8f0; }
-    footer a { color:#d7e8f0; }
-    .footer-title { color:#fff;font-weight:800;margin-bottom:16px; }
-    .social {
-      width:40px;height:40px;border-radius:50%;border:1px solid rgba(255,255,255,.15);
-      display:grid;place-items:center;color:#fff;
+    .form-control,
+    .form-select {
+      background: var(--surface);
+      color: var(--text);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: .8rem .9rem;
     }
-    .social:hover { background:rgba(255,255,255,.12);color:#fff; }
+
+    .form-control:focus,
+    .form-select:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 .2rem rgba(7, 91, 143, .10);
+    }
+
+    footer {
+      background: #062c43;
+      color: #d7e8f0;
+    }
+
+    footer a {
+      color: #d7e8f0;
+    }
+
+    .footer-title {
+      color: #fff;
+      font-weight: 800;
+      margin-bottom: 16px;
+    }
+
+    .social {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 1px solid rgba(255, 255, 255, .15);
+      display: grid;
+      place-items: center;
+      color: #fff;
+    }
+
+    .social:hover {
+      background: rgba(255, 255, 255, .12);
+      color: #fff;
+    }
 
     #backToTop {
-      position:fixed;right:20px;bottom:20px;z-index:1000;
-      width:46px;height:46px;border:0;border-radius:50%;
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      z-index: 1000;
+      width: 46px;
+      height: 46px;
+      border: 0;
+      border-radius: 50%;
       display: grid;
-    align-content: center;
-      background:var(--primary);color:#fff;display:none;box-shadow:var(--shadow);
+      align-content: center;
+      background: var(--primary);
+      color: #fff;
+      display: none;
+      box-shadow: var(--shadow);
     }
-    .toast-wrap { position:fixed;right:20px;top:90px;z-index:2000; }
+
+    .toast-wrap {
+      position: fixed;
+      right: 20px;
+      top: 90px;
+      z-index: 2000;
+    }
+
     .toast-custom {
-      background:var(--surface);color:var(--text);border:1px solid var(--border);
-      box-shadow:var(--shadow);border-radius:14px;padding:14px 18px;display:none;
+      background: var(--surface);
+      color: var(--text);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+      border-radius: 14px;
+      padding: 14px 18px;
+      display: none;
     }
 
     @media (max-width: 991px) {
-      .hero { padding:70px 0 90px; }
-      .doctor-img { height:520px; }
-      .floating-badge { left:15px;bottom:20px; }
-      .stats { margin-top:-25px; }
+      .hero {
+        padding: 70px 0 90px;
+      }
+
+      .doctor-img {
+        height: 520px;
+      }
+
+      .floating-badge {
+        left: 15px;
+        bottom: 20px;
+      }
+
+      .stats {
+        margin-top: -25px;
+      }
     }
+
     @media (max-width: 575px) {
-      .topbar .hide-mobile { display:none; }
-      .hero h1 { font-size:2.55rem; }
-      .section { padding:72px 0; }
-      .doctor-img { height:420px; }
-      .appointment { padding:30px 22px; }
+      .topbar .hide-mobile {
+        display: none;
+      }
+
+      .hero h1 {
+        font-size: 2.55rem;
+      }
+
+      .section {
+        padding: 72px 0;
+      }
+
+      .doctor-img {
+        height: 420px;
+      }
+
+      .appointment {
+        padding: 30px 22px;
+      }
     }
-    .tagline{
-      font-size: .63em ;
+
+    .tagline {
+      font-size: .60em;
     }
   </style>
 </head>
@@ -361,7 +782,8 @@
             রোগী-কেন্দ্রিক সেবা দেওয়াই আমাদের লক্ষ্য।
           </p>
           <div class="d-flex flex-wrap gap-3 mt-4">
-            <a href="#appointment" class="btn btn-primary-custom"><i class="bi bi-calendar2-check me-2"></i>অ্যাপয়েন্টমেন্ট নিন</a>
+            <a href="#appointment" class="btn btn-primary-custom"><i
+                class="bi bi-calendar2-check me-2"></i>অ্যাপয়েন্টমেন্ট নিন</a>
             <a href="#about" class="btn btn-outline-custom"><i class="bi bi-person-vcard me-2"></i>আরও জানুন</a>
           </div>
 
@@ -377,8 +799,8 @@
           <div class="hero-cardd">
             <img src="doctor-profile.jpg" class="doctor-img" alt="ডা. অমিত হাসান">
             <div class="floating-badge">
-              <strong><i class="bi bi-shield-check me-1"></i>বিশেষজ্ঞ চিকিৎসা</strong>
-              <span class="text-secondary">শিশু ও নবজাতক সার্জারি</span>
+              <strong><i class="bi bi-shield-check me-1"></i>বিশেষজ্ঞ চিকিৎসক</strong>
+              <span class="text-secondary ms-4">শিশু ও নবজাতক সার্জারি</span>
             </div>
           </div>
         </div>
@@ -391,16 +813,24 @@
     <div class="container">
       <div class="row g-3">
         <div class="col-6 col-lg-3" data-aos="zoom-in">
-          <div class="stat-card"><i class="bi bi-people"></i><div class="counter" data-target="5000">0+</div><span class="text-secondary">রোগী পরামর্শ</span></div>
+          <div class="stat-card"><i class="bi bi-people"></i>
+            <div class="counter" data-target="5000">0+</div><span class="text-secondary">রোগী পরামর্শ</span>
+          </div>
         </div>
         <div class="col-6 col-lg-3" data-aos="zoom-in" data-aos-delay="100">
-          <div class="stat-card"><i class="bi bi-award"></i><div class="counter" data-target="10">0+</div><span class="text-secondary">বছরের অভিজ্ঞতা</span></div>
+          <div class="stat-card"><i class="bi bi-award"></i>
+            <div class="counter" data-target="10">0+</div><span class="text-secondary">বছরের অভিজ্ঞতা</span>
+          </div>
         </div>
         <div class="col-6 col-lg-3" data-aos="zoom-in" data-aos-delay="200">
-          <div class="stat-card"><i class="bi bi-hospital"></i><div class="counter" data-target="25">0+</div><span class="text-secondary">চিকিৎসা ক্ষেত্র</span></div>
+          <div class="stat-card"><i class="bi bi-hospital"></i>
+            <div class="counter" data-target="25">0+</div><span class="text-secondary">চিকিৎসা ক্ষেত্র</span>
+          </div>
         </div>
         <div class="col-6 col-lg-3" data-aos="zoom-in" data-aos-delay="300">
-          <div class="stat-card"><i class="bi bi-clock-history"></i><div class="counter" data-target="6">0 PM</div><span class="text-secondary">চেম্বার শুরু</span></div>
+          <div class="stat-card"><i class="bi bi-clock-history"></i>
+            <div class="counter" data-target="6">0 PM</div><span class="text-secondary">চেম্বার শুরু</span>
+          </div>
         </div>
       </div>
     </div>
@@ -441,7 +871,8 @@
                 <div class="timeline-card">
                   <small>MBBS — রাজশাহী</small>
                   <h5 class="mt-2">ব্যাচেলর অব মেডিসিন অ্যান্ড সার্জারি</h5>
-                  <p class="text-secondary mb-0">বাংলাদেশ মেডিকেল বিশ্ববিদ্যালয়/সংশ্লিষ্ট মেডিকেল শিক্ষা ও প্রশিক্ষণ।</p>
+                  <p class="text-secondary mb-0">বাংলাদেশ মেডিকেল বিশ্ববিদ্যালয়/সংশ্লিষ্ট মেডিকেল শিক্ষা ও প্রশিক্ষণ।
+                  </p>
                 </div>
               </div>
               <div class="timeline-item">
@@ -509,7 +940,8 @@
               <div class="timeline-card">
                 <small>বর্তমান</small>
                 <h4 class="mt-2">বিশেষজ্ঞ চিকিৎসক</h4>
-                <p class="text-secondary mb-0">বাংলাদেশ শিশু হাসপাতাল ও ইনস্টিটিউট, শেরে বাংলা নগর, ঢাকা — শিশু সার্জারি/বিশেষজ্ঞ সেবা।</p>
+                <p class="text-secondary mb-0">বাংলাদেশ শিশু হাসপাতাল ও ইনস্টিটিউট, শেরে বাংলা নগর, ঢাকা — শিশু
+                  সার্জারি/বিশেষজ্ঞ সেবা।</p>
               </div>
             </div>
             <div class="timeline-item">
@@ -533,18 +965,25 @@
         <div class="col-lg-5" data-aos="fade-left">
           <div class="about-card h-100">
             <h4>চিকিৎসার নীতি</h4>
-            <p class="text-secondary mt-3">প্রতিটি রোগীর ক্ষেত্রে ইতিহাস, শারীরিক পরীক্ষা, প্রয়োজনীয় তদন্ত এবং পরিবারের সঙ্গে আলোচনা করে চিকিৎসা পরিকল্পনা করা।</p>
+            <p class="text-secondary mt-3">প্রতিটি রোগীর ক্ষেত্রে ইতিহাস, শারীরিক পরীক্ষা, প্রয়োজনীয় তদন্ত এবং
+              পরিবারের সঙ্গে আলোচনা করে চিকিৎসা পরিকল্পনা করা।</p>
             <div class="d-flex gap-3 align-items-start mt-4">
               <i class="bi bi-heart-pulse-fill fs-3 text-primary"></i>
-              <div><strong>Patient First</strong><div class="text-secondary">রোগীর নিরাপত্তা ও আরামকে অগ্রাধিকার।</div></div>
+              <div><strong>Patient First</strong>
+                <div class="text-secondary">রোগীর নিরাপত্তা ও আরামকে অগ্রাধিকার।</div>
+              </div>
             </div>
             <div class="d-flex gap-3 align-items-start mt-4">
               <i class="bi bi-chat-square-heart fs-3 text-primary"></i>
-              <div><strong>Family Education</strong><div class="text-secondary">অভিভাবকদের পরিষ্কার নির্দেশনা ও ফলো-আপ।</div></div>
+              <div><strong>Family Education</strong>
+                <div class="text-secondary">অভিভাবকদের পরিষ্কার নির্দেশনা ও ফলো-আপ।</div>
+              </div>
             </div>
             <div class="d-flex gap-3 align-items-start mt-4">
               <i class="bi bi-activity fs-3 text-primary"></i>
-              <div><strong>Evidence Based</strong><div class="text-secondary">প্রমাণভিত্তিক চিকিৎসা পদ্ধতির প্রতি গুরুত্ব।</div></div>
+              <div><strong>Evidence Based</strong>
+                <div class="text-secondary">প্রমাণভিত্তিক চিকিৎসা পদ্ধতির প্রতি গুরুত্ব।</div>
+              </div>
             </div>
           </div>
         </div>
@@ -564,7 +1003,8 @@
             <p class="mb-0"><i class="bi bi-clock me-2"></i>রবি থেকে বুধবার, সন্ধ্যা ৬টা থেকে রাত ৮টা</p>
           </div>
           <div class="col-lg-5 text-lg-end">
-            <a href="tel:+8801912200200" class="btn btn-light btn-lg rounded-3 me-2 mb-2"><i class="bi bi-telephone me-2"></i>কল করুন</a>
+            <a href="tel:+8801912200200" class="btn btn-light btn-lg rounded-3 me-2 mb-2"><i
+                class="bi bi-telephone me-2"></i>কল করুন</a>
             <!-- <button class="btn btn-outline-light btn-lg rounded-3 mb-2" data-bs-toggle="modal" data-bs-target="#appointmentModal"><i class="bi bi-calendar-plus me-2"></i>ফর্ম পূরণ করুন</button> -->
           </div>
         </div>
@@ -582,13 +1022,28 @@
       </div>
       <div class="row g-4">
         <div class="col-md-4" data-aos="fade-up">
-          <div class="testimonial-card"><div class="stars">★★★★★</div><p class="quote mt-3">“ডাক্তারের ব্যাখ্যা খুব সহজ ছিল। আমাদের সন্তানের সমস্যাটা বুঝতে অনেক সাহায্য হয়েছে।”</p><strong>একজন অভিভাবক</strong><div class="text-secondary small">ঢাকা</div></div>
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p class="quote mt-3">“ডাক্তারের ব্যাখ্যা খুব সহজ ছিল। আমাদের সন্তানের সমস্যাটা বুঝতে অনেক সাহায্য হয়েছে।”
+            </p><strong>একজন অভিভাবক</strong>
+            <div class="text-secondary small">ঢাকা</div>
+          </div>
         </div>
         <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
-          <div class="testimonial-card"><div class="stars">★★★★★</div><p class="quote mt-3">“সময় নিয়ে শুনেছেন এবং পরবর্তী করণীয় পরিষ্কার করে বলেছেন।”</p><strong>একজন রোগীর অভিভাবক</strong><div class="text-secondary small">বারিধারা</div></div>
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p class="quote mt-3">“সময় নিয়ে শুনেছেন এবং পরবর্তী করণীয় পরিষ্কার করে বলেছেন।”</p><strong>একজন রোগীর
+              অভিভাবক</strong>
+            <div class="text-secondary small">বারিধারা</div>
+          </div>
         </div>
         <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-          <div class="testimonial-card"><div class="stars">★★★★★</div><p class="quote mt-3">“শিশু সার্জারি সংক্রান্ত বিষয়ে প্রয়োজনীয় গাইডলাইন পেয়েছি।”</p><strong>একজন অভিভাবক</strong><div class="text-secondary small">ঢাকা</div></div>
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p class="quote mt-3">“শিশু সার্জারি সংক্রান্ত বিষয়ে প্রয়োজনীয় গাইডলাইন পেয়েছি।”</p><strong>একজন
+              অভিভাবক</strong>
+            <div class="text-secondary small">ঢাকা</div>
+          </div>
         </div>
       </div>
     </div>
@@ -605,20 +1060,35 @@
       <div class="faq-card mx-auto" style="max-width:900px" data-aos="fade-up">
         <div class="accordion" id="faqAccordion">
           <div class="accordion-item">
-            <h2 class="accordion-header"><button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#faq1">চেম্বার কখন?</button></h2>
-            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion"><div class="accordion-body">রবি থেকে বুধবার, সন্ধ্যা ৬টা থেকে রাত ৮টা। যাওয়ার আগে ফোনে সময় নিশ্চিত করে নেওয়া ভালো।</div></div>
+            <h2 class="accordion-header"><button class="accordion-button" data-bs-toggle="collapse"
+                data-bs-target="#faq1">চেম্বার কখন?</button></h2>
+            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">রবি থেকে বুধবার, সন্ধ্যা ৬টা থেকে রাত ৮টা। যাওয়ার আগে ফোনে সময় নিশ্চিত করে
+                নেওয়া ভালো।</div>
+            </div>
           </div>
           <div class="accordion-item">
-            <h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq2">কোন ধরনের রোগী দেখা হয়?</button></h2>
-            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">শিশু, কিশোর ও নবজাতকের বিভিন্ন সাধারণ এবং সার্জিক্যাল সমস্যা।</div></div>
+            <h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse"
+                data-bs-target="#faq2">কোন ধরনের রোগী দেখা হয়?</button></h2>
+            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">শিশু, কিশোর ও নবজাতকের বিভিন্ন সাধারণ এবং সার্জিক্যাল সমস্যা।</div>
+            </div>
           </div>
           <div class="accordion-item">
-            <h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq3">অ্যাপয়েন্টমেন্ট কীভাবে নেব?</button></h2>
-            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">উপরের কল বাটনে ক্লিক করে সরাসরি ফোন করতে পারেন অথবা অ্যাপয়েন্টমেন্ট ফর্ম পূরণ করতে পারেন।</div></div>
+            <h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse"
+                data-bs-target="#faq3">অ্যাপয়েন্টমেন্ট কীভাবে নেব?</button></h2>
+            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">উপরের কল বাটনে ক্লিক করে সরাসরি ফোন করতে পারেন অথবা অ্যাপয়েন্টমেন্ট ফর্ম পূরণ
+                করতে পারেন।</div>
+            </div>
           </div>
           <div class="accordion-item">
-            <h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq4">জরুরি অবস্থায় কী করব?</button></h2>
-            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">জরুরি বা জীবন-ঝুঁকিপূর্ণ অবস্থায় অনলাইন ফর্মের ওপর নির্ভর না করে নিকটস্থ জরুরি বিভাগে দ্রুত যোগাযোগ করুন।</div></div>
+            <h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse"
+                data-bs-target="#faq4">জরুরি অবস্থায় কী করব?</button></h2>
+            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">জরুরি বা জীবন-ঝুঁকিপূর্ণ অবস্থায় অনলাইন ফর্মের ওপর নির্ভর না করে নিকটস্থ
+                জরুরি বিভাগে দ্রুত যোগাযোগ করুন।</div>
+            </div>
           </div>
         </div>
       </div>
@@ -638,31 +1108,46 @@
           <div class="contact-card mb-3 ">
             <div class="d-flex gap-3">
               <div class="contact-icon"><i class="bi bi-geo-alt"></i></div>
-              <div><h5>চেম্বার</h5><p class="text-secondary mb-0">উপশম হেলথ পয়েন্ট (প্রাঃ) লিঃ<br>বাড়ি #১৪, রোড #২/বি, ব্লক #জে (দক্ষিণ), বারিধারা, ঢাকা-১২১২।</p></div>
+              <div>
+                <h5>চেম্বার</h5>
+                <p class="text-secondary mb-0">উপশম হেলথ পয়েন্ট (প্রাঃ) লিঃ<br>বাড়ি #১৪, রোড #২/বি, ব্লক #জে (দক্ষিণ),
+                  বারিধারা, ঢাকা-১২১২।</p>
+              </div>
             </div>
             <div class="d-flex gap-3 mt-4">
               <div class="contact-icon"><i class="bi bi-telephone"></i></div>
-              <div><h5>ফোন</h5><p class="mb-1"><a href="tel:+8801912200200">০১৯১২ ২০০ ২০০</a></p><p class="mb-0"><a href="tel:+8801973888100">০১৯৭৩ ৮৮৮ ১০০</a></p></div>
+              <div>
+                <h5>ফোন</h5>
+                <p class="mb-1"><a href="tel:+8801912200200">০১৯১২ ২০০ ২০০</a></p>
+                <p class="mb-0"><a href="tel:+8801973888100">০১৯৭৩ ৮৮৮ ১০০</a></p>
+              </div>
             </div>
             <div class="d-flex gap-3 mt-4">
               <div class="contact-icon"><i class="bi bi-clock"></i></div>
-              <div><h5>চেম্বার সময়</h5><p class="text-secondary mb-0">রবি–বুধ<br>সন্ধ্যা ৬টা – রাত ৮টা</p></div>
+              <div>
+                <h5>চেম্বার সময়</h5>
+                <p class="text-secondary mb-0">রবি–বুধ<br>সন্ধ্যা ৬টা – রাত ৮টা</p>
+              </div>
             </div>
           </div>
-          
-         
+
+
         </div>
 
         <div class="col-lg-7" data-aos="fade-left">
           <div class="contact-card">
             <h4>বার্তা পাঠান</h4>
-            <p class="text-secondary">এই demo form frontend validation সহ তৈরি। Backend যুক্ত করলে সরাসরি database/email-এ সংরক্ষণ করা যাবে।</p>
+            <p class="text-secondary">এই demo form frontend validation সহ তৈরি। Backend যুক্ত করলে সরাসরি
+              database/email-এ সংরক্ষণ করা যাবে।</p>
             <form id="contactForm" class="row g-3 mt-1">
               <div class="col-md-6"><label class="form-label">নাম</label><input class="form-control" required></div>
-              <div class="col-md-6"><label class="form-label">ফোন</label><input class="form-control" type="tel" required></div>
+              <div class="col-md-6"><label class="form-label">ফোন</label><input class="form-control" type="tel"
+                  required></div>
               <div class="col-12"><label class="form-label">ইমেইল</label><input class="form-control" type="email"></div>
-              <div class="col-12"><label class="form-label">বার্তা</label><textarea class="form-control" rows="5" required></textarea></div>
-              <div class="col-12"><button class="btn btn-primary-custom" type="submit"><i class="bi bi-send me-2"></i>বার্তা পাঠান</button></div>
+              <div class="col-12"><label class="form-label">বার্তা</label><textarea class="form-control" rows="5"
+                  required></textarea></div>
+              <div class="col-12"><button class="btn btn-primary-custom" type="submit"><i
+                    class="bi bi-send me-2"></i>বার্তা পাঠান</button></div>
             </form>
           </div>
         </div>
@@ -686,7 +1171,8 @@
         <div class="col-6 col-lg-3">
           <h6 class="footer-title">দ্রুত লিংক</h6>
           <div class="d-flex flex-column gap-2">
-            <a href="#about">পরিচিতি</a><a href="#services">সেবা</a><a href="#conditions">রোগসমূহ</a><a href="#appointment">অ্যাপয়েন্টমেন্ট</a>
+            <a href="#about">পরিচিতি</a><a href="#services">সেবা</a><a href="#conditions">রোগসমূহ</a><a
+              href="#appointment">অ্যাপয়েন্টমেন্ট</a>
           </div>
         </div>
         <div class="col-6 col-lg-4">
@@ -699,7 +1185,7 @@
       <hr class="border-light opacity-10 my-4">
       <div class="d-flex flex-wrap justify-content-between gap-2 small">
         <span>© <span id="year"></span> Dr. Amit Hasan. All rights reserved.</span>
-        <span>Designed with a patient-first approach.</span>
+        <!-- <span></span> -->
       </div>
     </div>
   </footer>
@@ -715,21 +1201,32 @@
         <form id="appointmentForm">
           <div class="modal-body">
             <div class="mb-3"><label class="form-label">রোগীর নাম</label><input class="form-control" required></div>
-            <div class="mb-3"><label class="form-label">অভিভাবকের ফোন</label><input class="form-control" type="tel" required></div>
+            <div class="mb-3"><label class="form-label">অভিভাবকের ফোন</label><input class="form-control" type="tel"
+                required></div>
             <div class="row g-3">
-              <div class="col-6"><label class="form-label">তারিখ</label><input class="form-control" type="date" required></div>
-              <div class="col-6"><label class="form-label">সময়</label><select class="form-select"><option>সন্ধ্যা ৬:০০</option><option>সন্ধ্যা ৬:৩০</option><option>সন্ধ্যা ৭:০০</option><option>সন্ধ্যা ৭:৩০</option></select></div>
+              <div class="col-6"><label class="form-label">তারিখ</label><input class="form-control" type="date"
+                  required></div>
+              <div class="col-6"><label class="form-label">সময়</label><select class="form-select">
+                  <option>সন্ধ্যা ৬:০০</option>
+                  <option>সন্ধ্যা ৬:৩০</option>
+                  <option>সন্ধ্যা ৭:০০</option>
+                  <option>সন্ধ্যা ৭:৩০</option>
+                </select></div>
             </div>
-            <div class="mt-3"><label class="form-label">সমস্যার সংক্ষিপ্ত বিবরণ</label><textarea class="form-control" rows="3"></textarea></div>
+            <div class="mt-3"><label class="form-label">সমস্যার সংক্ষিপ্ত বিবরণ</label><textarea class="form-control"
+                rows="3"></textarea></div>
           </div>
-          <div class="modal-footer"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">বন্ধ করুন</button><button class="btn btn-primary-custom">রিকোয়েস্ট পাঠান</button></div>
+          <div class="modal-footer"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">বন্ধ
+              করুন</button><button class="btn btn-primary-custom">রিকোয়েস্ট পাঠান</button></div>
         </form>
       </div>
     </div>
   </div>
 
   <button id="backToTop" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
-  <div class="toast-wrap"><div id="toast" class="toast-custom"></div></div>
+  <div class="toast-wrap">
+    <div id="toast" class="toast-custom"></div>
+  </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
@@ -741,38 +1238,38 @@
        ========================================================== */
 
     const services = [
-      {icon:"bi-heart-pulse", title:"শিশু চিকিৎসা", text:"শিশু ও কিশোরদের সাধারণ ও জটিল স্বাস্থ্য সমস্যায় পরামর্শ ও চিকিৎসা।", category:"General"},
-      {icon:"bi-stars", title:"নবজাতক সেবা", text:"নবজাতকের বিভিন্ন সমস্যা, জন্মগত জটিলতা ও প্রয়োজনীয় ফলো-আপ।", category:"Neonatal"},
-      {icon:"bi-scissors", title:"শিশু সার্জারি", text:"শিশুদের বিভিন্ন সার্জিক্যাল সমস্যা মূল্যায়ন, অপারেশন পরিকল্পনা ও পরবর্তী যত্ন।", category:"Surgery"},
-      {icon:"bi-droplet-half", title:"শিশু ইউরোলজি", text:"মূত্রনালী, কিডনি ও জন্মগত ইউরোলজিক্যাল সমস্যায় বিশেষজ্ঞ পরামর্শ।", category:"Urology"},
-      {icon:"bi-activity", title:"জন্মগত সমস্যা", text:"জন্মগত ত্রুটি ও শিশুদের কাঠামোগত সমস্যার মূল্যায়ন ও চিকিৎসা পরিকল্পনা।", category:"Congenital"},
-      {icon:"bi-chat-heart", title:"অভিভাবক কাউন্সেলিং", text:"রোগের কারণ, চিকিৎসা, সতর্কতা ও ফলো-আপ সম্পর্কে সহজ ভাষায় গাইডলাইন।", category:"Counselling"}
+      { icon: "bi-heart-pulse", title: "শিশু চিকিৎসা", text: "শিশু ও কিশোরদের সাধারণ ও জটিল স্বাস্থ্য সমস্যায় পরামর্শ ও চিকিৎসা।", category: "General" },
+      { icon: "bi-stars", title: "নবজাতক সেবা", text: "নবজাতকের বিভিন্ন সমস্যা, জন্মগত জটিলতা ও প্রয়োজনীয় ফলো-আপ।", category: "Neonatal" },
+      { icon: "bi-scissors", title: "শিশু সার্জারি", text: "শিশুদের বিভিন্ন সার্জিক্যাল সমস্যা মূল্যায়ন, অপারেশন পরিকল্পনা ও পরবর্তী যত্ন।", category: "Surgery" },
+      { icon: "bi-droplet-half", title: "শিশু ইউরোলজি", text: "মূত্রনালী, কিডনি ও জন্মগত ইউরোলজিক্যাল সমস্যায় বিশেষজ্ঞ পরামর্শ।", category: "Urology" },
+      { icon: "bi-activity", title: "জন্মগত সমস্যা", text: "জন্মগত ত্রুটি ও শিশুদের কাঠামোগত সমস্যার মূল্যায়ন ও চিকিৎসা পরিকল্পনা।", category: "Congenital" },
+      { icon: "bi-chat-heart", title: "অভিভাবক কাউন্সেলিং", text: "রোগের কারণ, চিকিৎসা, সতর্কতা ও ফলো-আপ সম্পর্কে সহজ ভাষায় গাইডলাইন।", category: "Counselling" }
     ];
 
     const conditionData = [
-      ["General","হার্নিয়া ও হাইড্রোসিল"],["General","কিডনিতে পানি জমা"],["Surgery","পিত্তথলিতে পাথর"],
-      ["Surgery","অণ্ডকোষে পানি ও ফোলা"],["General","পেটব্যথা"],["Surgery","অ্যাপেন্ডিসাইটিস"],
-      ["Surgery","পেটের নাড়ি পেঁচিয়ে যাওয়া"],["General","খাওয়ায় অরুচি ও বদহজম"],
-      ["General","পেটে গ্যাস হওয়া"],["General","খাদ্যনালীর সমস্যা"],["Congenital","অন্ত্রকোষ সঠিক স্থানে না থাকা"],
-      ["Urology","ইউরোলজিক্যাল সমস্যা"],["Urology","তৃতীয় লিঙ্গের (হিজড়া) সমস্যা"],
-      ["General","হাঁটুর ব্যথা"],["Urology","কিডনিতে পাথর ও ইনফেকশন"],
-      ["Congenital","প্রশ্রাবের রাস্তা সঠিক স্থানে না থাকা"],["General","প্রোস্টেট সার্জারি"],
-      ["General","শরীরের যেকোনো স্থানে ব্যথা ও রক্তপাত"],["General","জ্বর না সারা"],
-      ["Urology","পায়খানার রাস্তা সঠিক স্থানে না থাকা"],["Surgery","শরীরের যেকোনো স্থানের টিউমার"],
-      ["General","ওজন না বাড়া, দুর্বলতা"],["Surgery","জন্ডিস, কিডনি, খাদ্যনালী ও পেটের ক্যান্সার"],
-      ["Congenital","পায়ুপথের জন্মগত সমস্যা"],["Urology","মূত্রত্যাগে প্রদাহ ও ঘন ঘন প্রস্রাব"],
-      ["Surgery","মেরুদণ্ডের টিউমার"],["General","নিউরোসার্জিক্যাল সমস্যা"],["General","হাটে সমস্যা"],
-      ["Congenital","জন্মগত পা বাঁকা"],["General","মূত্রে থাকা করা হয়"],
-      ["Urology","জন্ডিস না সারা"],["Urology","বুকে পানি জমা ও শ্বাসকষ্ট"],
-      ["Congenital","জন্মগত যে কোনো ক্রুটি"],["Surgery","নাড়ির সমস্যা"],
-      ["Surgery","মলদ্বারের পাইলস, ফিশার ও ফিস্টুলা"],["Surgery","ক্যাবিজ ডিভাইস"],
-      ["General","বার্ন ম্যানেজমেন্ট"],["General","মাথায় পানি জমা ও ফোলা"],
-      ["General","গলা ব্যথা ও ফোলা"],["General","নাকের পলিপ"],["General","হাত ও পায়ের সমস্যা"]
+      ["General", "হার্নিয়া ও হাইড্রোসিল"], ["General", "কিডনিতে পানি জমা"], ["Surgery", "পিত্তথলিতে পাথর"],
+      ["Surgery", "অণ্ডকোষে পানি ও ফোলা"], ["General", "পেটব্যথা"], ["Surgery", "অ্যাপেন্ডিসাইটিস"],
+      ["Surgery", "পেটের নাড়ি পেঁচিয়ে যাওয়া"], ["General", "খাওয়ায় অরুচি ও বদহজম"],
+      ["General", "পেটে গ্যাস হওয়া"], ["General", "খাদ্যনালীর সমস্যা"], ["Congenital", "অন্ত্রকোষ সঠিক স্থানে না থাকা"],
+      ["Urology", "ইউরোলজিক্যাল সমস্যা"], ["Urology", "তৃতীয় লিঙ্গের (হিজড়া) সমস্যা"],
+      ["General", "হাঁটুর ব্যথা"], ["Urology", "কিডনিতে পাথর ও ইনফেকশন"],
+      ["Congenital", "প্রশ্রাবের রাস্তা সঠিক স্থানে না থাকা"], ["General", "প্রোস্টেট সার্জারি"],
+      ["General", "শরীরের যেকোনো স্থানে ব্যথা ও রক্তপাত"], ["General", "জ্বর না সারা"],
+      ["Urology", "পায়খানার রাস্তা সঠিক স্থানে না থাকা"], ["Surgery", "শরীরের যেকোনো স্থানের টিউমার"],
+      ["General", "ওজন না বাড়া, দুর্বলতা"], ["Surgery", "জন্ডিস, কিডনি, খাদ্যনালী ও পেটের ক্যান্সার"],
+      ["Congenital", "পায়ুপথের জন্মগত সমস্যা"], ["Urology", "মূত্রত্যাগে প্রদাহ ও ঘন ঘন প্রস্রাব"],
+      ["Surgery", "মেরুদণ্ডের টিউমার"], ["General", "নিউরোসার্জিক্যাল সমস্যা"], ["General", "হাটে সমস্যা"],
+      ["Congenital", "জন্মগত পা বাঁকা"], ["General", "মূত্রে থাকা করা হয়"],
+      ["Urology", "জন্ডিস না সারা"], ["Urology", "বুকে পানি জমা ও শ্বাসকষ্ট"],
+      ["Congenital", "জন্মগত যে কোনো ক্রুটি"], ["Surgery", "নাড়ির সমস্যা"],
+      ["Surgery", "মলদ্বারের পাইলস, ফিশার ও ফিস্টুলা"], ["Surgery", "ক্যাবিজ ডিভাইস"],
+      ["General", "বার্ন ম্যানেজমেন্ট"], ["General", "মাথায় পানি জমা ও ফোলা"],
+      ["General", "গলা ব্যথা ও ফোলা"], ["General", "নাকের পলিপ"], ["General", "হাত ও পায়ের সমস্যা"]
     ];
 
     const serviceGrid = document.getElementById("serviceGrid");
-    serviceGrid.innerHTML = services.map((s,i)=>`
-      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="${i*60}">
+    serviceGrid.innerHTML = services.map((s, i) => `
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="${i * 60}">
         <div class="service-card">
           <div class="service-icon"><i class="bi ${s.icon}"></i></div>
           <h4>${s.title}</h4>
@@ -782,15 +1279,15 @@
       </div>
     `).join("");
 
-    const filterLabels = {All:"সব", General:"সাধারণ", Neonatal:"নবজাতক", Surgery:"সার্জারি", Urology:"ইউরোলজি", Congenital:"জন্মগত", Counselling:"কাউন্সেলিং"};
-    const filters = ["All", ...new Set(conditionData.map(x=>x[0]))];
+    const filterLabels = { All: "সব", General: "সাধারণ", Neonatal: "নবজাতক", Surgery: "সার্জারি", Urology: "ইউরোলজি", Congenital: "জন্মগত", Counselling: "কাউন্সেলিং" };
+    const filters = ["All", ...new Set(conditionData.map(x => x[0]))];
     const filterWrap = document.getElementById("conditionFilters");
-    filterWrap.innerHTML = filters.map((f,i)=>`<button class="filter-btn ${i===0?'active':''}" data-filter="${f}">${filterLabels[f]||f}</button>`).join("");
+    filterWrap.innerHTML = filters.map((f, i) => `<button class="filter-btn ${i === 0 ? 'active' : ''}" data-filter="${f}">${filterLabels[f] || f}</button>`).join("");
 
     const conditionGrid = document.getElementById("conditionGrid");
-    function renderConditions(filter="All") {
-      const list = filter==="All" ? conditionData : conditionData.filter(x=>x[0]===filter);
-      conditionGrid.innerHTML = list.map((item,i)=>`
+    function renderConditions(filter = "All") {
+      const list = filter === "All" ? conditionData : conditionData.filter(x => x[0] === filter);
+      conditionGrid.innerHTML = list.map((item, i) => `
         <div class="col-sm-6 col-lg-4">
           <div class="condition-card" data-aos="fade-up">
             <span class="condition-dot"></span><span>${item[1]}</span>
@@ -800,9 +1297,9 @@
     }
     renderConditions();
 
-    document.querySelectorAll(".filter-btn").forEach(btn=>{
-      btn.addEventListener("click",()=>{
-        document.querySelectorAll(".filter-btn").forEach(b=>b.classList.remove("active"));
+    document.querySelectorAll(".filter-btn").forEach(btn => {
+      btn.addEventListener("click", () => {
+        document.querySelectorAll(".filter-btn").forEach(b => b.classList.remove("active"));
         btn.classList.add("active");
         renderConditions(btn.dataset.filter);
       });
@@ -812,55 +1309,55 @@
     const root = document.documentElement;
     const themeToggle = document.getElementById("themeToggle");
     const savedTheme = localStorage.getItem("doctorTheme");
-    if(savedTheme) root.dataset.theme = savedTheme;
-    function updateThemeIcon(){
-      themeToggle.innerHTML = root.dataset.theme==="dark"
+    if (savedTheme) root.dataset.theme = savedTheme;
+    function updateThemeIcon() {
+      themeToggle.innerHTML = root.dataset.theme === "dark"
         ? '<i class="bi bi-sun"></i>' : '<i class="bi bi-moon-stars"></i>';
     }
     updateThemeIcon();
-    themeToggle.addEventListener("click",()=>{
-      root.dataset.theme = root.dataset.theme==="dark" ? "light" : "dark";
-      localStorage.setItem("doctorTheme",root.dataset.theme);
+    themeToggle.addEventListener("click", () => {
+      root.dataset.theme = root.dataset.theme === "dark" ? "light" : "dark";
+      localStorage.setItem("doctorTheme", root.dataset.theme);
       updateThemeIcon();
     });
 
     // Navbar scroll
     const nav = document.getElementById("mainNav");
-    window.addEventListener("scroll",()=>{
-      nav.classList.toggle("scrolled",window.scrollY>20);
-      document.getElementById("backToTop").style.display = window.scrollY>500 ? "grid" : "none";
+    window.addEventListener("scroll", () => {
+      nav.classList.toggle("scrolled", window.scrollY > 20);
+      document.getElementById("backToTop").style.display = window.scrollY > 500 ? "grid" : "none";
     });
-    document.getElementById("backToTop").onclick=()=>window.scrollTo({top:0,behavior:"smooth"});
+    document.getElementById("backToTop").onclick = () => window.scrollTo({ top: 0, behavior: "smooth" });
 
     // Animated counters
     const counters = document.querySelectorAll(".counter");
-    const observer = new IntersectionObserver(entries=>{
-      entries.forEach(entry=>{
-        if(!entry.isIntersecting || entry.target.dataset.done) return;
-        entry.target.dataset.done="1";
-        const target=+entry.target.dataset.target;
-        let current=0;
-        const step=Math.max(1,Math.ceil(target/70));
-        const timer=setInterval(()=>{
-          current=Math.min(target,current+step);
-          entry.target.textContent = target===6 ? current+" PM" : current.toLocaleString("en-US")+"+";
-          if(current>=target) clearInterval(timer);
-        },20);
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting || entry.target.dataset.done) return;
+        entry.target.dataset.done = "1";
+        const target = +entry.target.dataset.target;
+        let current = 0;
+        const step = Math.max(1, Math.ceil(target / 70));
+        const timer = setInterval(() => {
+          current = Math.min(target, current + step);
+          entry.target.textContent = target === 6 ? current + " PM" : current.toLocaleString("en-US") + "+";
+          if (current >= target) clearInterval(timer);
+        }, 20);
       });
-    },{threshold:.6});
-    counters.forEach(c=>observer.observe(c));
+    }, { threshold: .6 });
+    counters.forEach(c => observer.observe(c));
 
     // Forms
-    function showToast(message){
-      const toast=document.getElementById("toast");
-      toast.textContent=message; toast.style.display="block";
+    function showToast(message) {
+      const toast = document.getElementById("toast");
+      toast.textContent = message; toast.style.display = "block";
       clearTimeout(window.toastTimer);
-      window.toastTimer=setTimeout(()=>toast.style.display="none",3500);
+      window.toastTimer = setTimeout(() => toast.style.display = "none", 3500);
     }
-    document.getElementById("contactForm").addEventListener("submit",e=>{
+    document.getElementById("contactForm").addEventListener("submit", e => {
       e.preventDefault(); showToast("ধন্যবাদ! আপনার বার্তা সফলভাবে গ্রহণ করা হয়েছে।"); e.target.reset();
     });
-    document.getElementById("appointmentForm").addEventListener("submit",e=>{
+    document.getElementById("appointmentForm").addEventListener("submit", e => {
       e.preventDefault();
       bootstrap.Modal.getInstance(document.getElementById("appointmentModal")).hide();
       showToast("অ্যাপয়েন্টমেন্ট রিকোয়েস্ট ডেমো হিসেবে গ্রহণ করা হয়েছে। Backend যুক্ত করলে এটি বাস্তবে সংরক্ষণ করা যাবে।");
@@ -868,20 +1365,21 @@
     });
 
     // Active nav link
-    const sections=document.querySelectorAll("section[id], header[id]");
-    const links=document.querySelectorAll(".nav-link");
-    const sectionObserver=new IntersectionObserver(entries=>{
-      entries.forEach(entry=>{
-        if(entry.isIntersecting){
-          links.forEach(l=>l.classList.toggle("active",l.getAttribute("href")==="#"+entry.target.id));
+    const sections = document.querySelectorAll("section[id], header[id]");
+    const links = document.querySelectorAll(".nav-link");
+    const sectionObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          links.forEach(l => l.classList.toggle("active", l.getAttribute("href") === "#" + entry.target.id));
         }
       });
-    },{rootMargin:"-40% 0px -50% 0px"});
-    sections.forEach(s=>sectionObserver.observe(s));
+    }, { rootMargin: "-40% 0px -50% 0px" });
+    sections.forEach(s => sectionObserver.observe(s));
 
     // AOS
-    AOS.init({duration:750,once:true,offset:70});
-    document.getElementById("year").textContent=new Date().getFullYear();
+    AOS.init({ duration: 750, once: true, offset: 70 });
+    document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 </body>
+
 </html>
