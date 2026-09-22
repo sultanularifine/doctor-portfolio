@@ -1066,21 +1066,80 @@
   }
 
 }
+/* Mobile Responsive */
+@media (max-width: 767px) {
+
+  .topbar .container {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 8px !important;
+  }
+
+  .phone-info {
+    display: flex !important;
+    flex-direction: column;
+    gap: 2px !important;
+    line-height: 1.4;
+  }
+
+  .phone-info span {
+    white-space: nowrap;
+    font-size: 12px;
+  }
+
+  .phone-info i {
+    font-size: 11px;
+  }
+
+  .address-info {
+    text-align: right;
+    font-size: 13px;
+    line-height: 1.4;
+  }
+
+  .address-info i {
+    font-size: 11px;
+  }
+
+  .hide-mobile {
+    display: none !important;
+  }
+}
   </style>
 </head>
 
 <body>
   <!-- Top Bar -->
-  <div class="topbar py-2">
-    <div class="container d-flex justify-content-between align-items-center gap-3">
-      <div class="d-flex gap-3">
-        <span><i class="bi bi-telephone me-1"></i><a href="tel:+8801912200200">01912-200200</a></span>
-        <span><i class="bi bi-telephone me-1"></i><a href="tel:+8801640167617">01640-167617</a></span>
-        <span class="hide-mobile"><i class="bi bi-clock me-1"></i>রবি–বুধ: সন্ধ্যা ৬টা–রাত ৮টা</span>
-      </div>
-      <span><i class="bi bi-geo-alt me-1"></i>ইসলামী ব্যাংক হাসপাতাল, ঝিনাইদহ</span>
+ <div class="topbar py-2">
+  <div class="container d-flex justify-content-between align-items-center gap-3">
+
+    <!-- Left: Phone Numbers -->
+    <div class="d-flex gap-3 phone-info">
+      <span>
+        <i class="bi bi-telephone me-1"></i>
+        <a href="tel:+8801912200200">01912-200200</a>
+      </span>
+
+      <span>
+        <i class="bi bi-telephone me-1"></i>
+        <a href="tel:+8801640167617">01640-167617</a>
+      </span>
+
+      <span class="hide-mobile">
+        <i class="bi bi-clock me-1"></i>
+        রবি–বুধ: সন্ধ্যা ৬টা–রাত ৮টা
+      </span>
     </div>
+
+    <!-- Right: Address -->
+    <span class="address-info">
+      <i class="bi bi-geo-alt me-1"></i>
+      ইসলামী ব্যাংক হাসপাতাল, ঝিনাইদহ
+    </span>
+
   </div>
+</div>
 
   <!-- Navbar -->
   <nav id="mainNav" class="navbar navbar-expand-lg sticky-top">
