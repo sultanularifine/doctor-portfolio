@@ -977,169 +977,171 @@
       }
 
     }
+
     /* =========================================================
    MOBILE ONLY — FIXED APPOINTMENT BUTTON
 ========================================================= */
 
-.mobile-appointment-btn {
-  display: none;
-}
+    .mobile-appointment-btn {
+      display: none;
+    }
 
-@media (max-width: 767.98px) {
+    @media (max-width: 767.98px) {
 
-  .mobile-appointment-btn {
-    position: fixed;
-    left: 0;
-    bottom: 140px;
+      .mobile-appointment-btn {
+        position: fixed;
+        left: 0;
+        bottom: 140px;
 
-    z-index: 9999;
+        z-index: 9999;
 
-    display: flex;
-    align-items: center;
-    gap: 8px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
 
-    padding: 11px 16px 11px 11px;
+        padding: 11px 16px 11px 11px;
 
-    background: #0d6efd;
-    color: #fff;
+        background: #0d6efd;
+        color: #fff;
 
-    text-decoration: none;
+        text-decoration: none;
 
-    border-radius: 0 30px 30px 0;
+        border-radius: 0 30px 30px 0;
 
-    font-size: 13px;
-    font-weight: 700;
+        font-size: 13px;
+        font-weight: 700;
 
-    box-shadow:
-      0 5px 18px rgba(13, 110, 253, 0.35),
-      0 0 0 0 rgba(13, 110, 253, 0.45);
+        box-shadow:
+          0 5px 18px rgba(13, 110, 253, 0.35),
+          0 0 0 0 rgba(13, 110, 253, 0.45);
 
-    animation: appointmentPulse 1.8s infinite;
+        animation: appointmentPulse 1.8s infinite;
 
-    transition: all 0.3s ease;
-  }
+        transition: all 0.3s ease;
+      }
 
-  .mobile-appointment-btn i {
-    width: 30px;
-    height: 30px;
+      .mobile-appointment-btn i {
+        width: 30px;
+        height: 30px;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
-    background: rgba(255, 255, 255, 0.18);
+        background: rgba(255, 255, 255, 0.18);
 
-    border-radius: 50%;
+        border-radius: 50%;
 
-    font-size: 16px;
-  }
+        font-size: 16px;
+      }
 
-  .mobile-appointment-btn:active {
-    transform: scale(0.95);
-  }
+      .mobile-appointment-btn:active {
+        transform: scale(0.95);
+      }
 
-}
+    }
 
 
-/* =========================================================
+    /* =========================================================
    HIGHLIGHT / BLINK ANIMATION
 ========================================================= */
 
-@keyframes appointmentPulse {
+    @keyframes appointmentPulse {
 
-  0% {
-    box-shadow:
-      0 5px 18px rgba(13, 110, 253, 0.35),
-      0 0 0 0 rgba(13, 110, 253, 0.45);
-  }
+      0% {
+        box-shadow:
+          0 5px 18px rgba(13, 110, 253, 0.35),
+          0 0 0 0 rgba(13, 110, 253, 0.45);
+      }
 
-  50% {
-    box-shadow:
-      0 5px 20px rgba(13, 110, 253, 0.45),
-      0 0 0 8px rgba(13, 110, 253, 0.08);
-  }
+      50% {
+        box-shadow:
+          0 5px 20px rgba(13, 110, 253, 0.45),
+          0 0 0 8px rgba(13, 110, 253, 0.08);
+      }
 
-  100% {
-    box-shadow:
-      0 5px 18px rgba(13, 110, 253, 0.35),
-      0 0 0 0 rgba(13, 110, 253, 0);
-  }
+      100% {
+        box-shadow:
+          0 5px 18px rgba(13, 110, 253, 0.35),
+          0 0 0 0 rgba(13, 110, 253, 0);
+      }
 
-}
-/* Mobile Responsive */
-@media (max-width: 767px) {
+    }
 
-  .topbar .container {
-    display: grid !important;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    gap: 8px !important;
-  }
+    /* Mobile Responsive */
+    @media (max-width: 767px) {
 
-  .phone-info {
-    display: flex !important;
-    flex-direction: column;
-    gap: 2px !important;
-    line-height: 1.4;
-  }
+      .topbar .container {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 8px !important;
+      }
 
-  .phone-info span {
-    white-space: nowrap;
-    font-size: 12px;
-  }
+      .phone-info {
+        display: flex !important;
+        flex-direction: column;
+        gap: 2px !important;
+        line-height: 1.4;
+      }
 
-  .phone-info i {
-    font-size: 11px;
-  }
+      .phone-info span {
+        white-space: nowrap;
+        font-size: 12px;
+      }
 
-  .address-info {
-    text-align: right;
-    font-size: 13px;
-    line-height: 1.4;
-  }
+      .phone-info i {
+        font-size: 11px;
+      }
 
-  .address-info i {
-    font-size: 11px;
-  }
+      .address-info {
+        text-align: right;
+        font-size: 13px;
+        line-height: 1.4;
+      }
 
-  .hide-mobile {
-    display: none !important;
-  }
-}
+      .address-info i {
+        font-size: 11px;
+      }
+
+      .hide-mobile {
+        display: none !important;
+      }
+    }
   </style>
 </head>
 
 <body>
   <!-- Top Bar -->
- <div class="topbar py-2">
-  <div class="container d-flex justify-content-between align-items-center gap-3">
+  <div class="topbar py-2">
+    <div class="container d-flex justify-content-between align-items-center gap-3">
 
-    <!-- Left: Phone Numbers -->
-    <div class="d-flex gap-3 phone-info">
-      <span>
-        <i class="bi bi-telephone me-1"></i>
-        <a href="tel:+8801912200200">01912-200200</a>
+      <!-- Left: Phone Numbers -->
+      <div class="d-flex gap-3 phone-info">
+        <span>
+          <i class="bi bi-telephone me-1"></i>
+          <a href="tel:+8801912200200">01912-200200</a>
+        </span>
+
+        <span>
+          <i class="bi bi-telephone me-1"></i>
+          <a href="tel:+8801640167617">01640-167617</a>
+        </span>
+
+        <span class="hide-mobile">
+          <i class="bi bi-clock me-1"></i>
+          রবি–বুধ: সন্ধ্যা ৬টা–রাত ৮টা
+        </span>
+      </div>
+
+      <!-- Right: Address -->
+      <span class="address-info">
+        <i class="bi bi-geo-alt me-1"></i>
+        ইসলামী ব্যাংক হাসপাতাল, ঝিনাইদহ।
       </span>
 
-      <span>
-        <i class="bi bi-telephone me-1"></i>
-        <a href="tel:+8801640167617">01640-167617</a>
-      </span>
-
-      <span class="hide-mobile">
-        <i class="bi bi-clock me-1"></i>
-        রবি–বুধ: সন্ধ্যা ৬টা–রাত ৮টা
-      </span>
     </div>
-
-    <!-- Right: Address -->
-    <span class="address-info">
-      <i class="bi bi-geo-alt me-1"></i>
-      ইসলামী ব্যাংক হাসপাতাল, ঝিনাইদহ।
-    </span>
-
   </div>
-</div>
 
   <!-- Navbar -->
   <nav id="mainNav" class="navbar navbar-expand-lg sticky-top">
@@ -1569,7 +1571,36 @@
 
               </div>
             </div>
+            <!-- নবজাতক শিশু ও জেনারেল হাসপাতাল -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
 
+              <div class="timeline-card">
+                <small>Professional Practice • Dhaka</small>
+
+                <h4 class="mt-2">
+                  নবজাতক শিশু ও জেনারেল হাসপাতাল
+                </h4>
+
+                <p class="text-secondary mb-2">
+                  <i class="bi bi-geo-alt-fill me-1"></i>
+                  লালমাটিয়া, মোহাম্মদপুর, ঢাকা।
+                  <br>
+                  <span class="ms-4">(লালমাটিয়া মহিলা কলেজের সামনে)</span>
+                </p>
+                <!-- Common Number -->
+                <div class="mt-2">
+                  <strong>
+                    <i class="bi bi-phone-fill me-1"></i>
+                    সিরিয়াল / যোগাযোগ:
+                  </strong>
+
+                  <a href="tel:01640167617" class="text-decoration-none">
+                    01640-167617
+                  </a>
+                </div>
+              </div>
+            </div>
             <!-- International Exposure -->
             <div class="timeline-item mb-0">
               <div class="timeline-dot"></div>
@@ -3004,10 +3035,10 @@
 
   </footer>
   <!-- Mobile Fixed Appointment Button -->
-<a href="#appointment" class="mobile-appointment-btn">
-  <i class="bi bi-calendar-check-fill"></i>
-  <span>অ্যাপয়েন্টমেন্ট</span>
-</a>
+  <a href="#appointment" class="mobile-appointment-btn">
+    <i class="bi bi-calendar-check-fill"></i>
+    <span>অ্যাপয়েন্টমেন্ট</span>
+  </a>
   <!-- =========================================================
      APPOINTMENT MODALS
 ========================================================= -->
